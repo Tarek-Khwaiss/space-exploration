@@ -115,6 +115,8 @@ h3 {
 ul {
   list-style-type: none;
   padding: 0;
+  font-size: $primary-text;
+  color: $red;
 }
 li {
   display: inline-block;
