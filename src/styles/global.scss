@@ -1,3 +1,51 @@
-$primary-text: 1.7rem;
-$secondary-text: 0.8rem;
-$red: purple;
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+
+/* headers text */
+$headingOne: 9.5rem;
+$headingTwo: 6.25rem;
+$headingThree: 3.5rem;
+$headingFour: 2rem;
+$headingFive: 1.75rem;
+
+/* subheaders */
+$subHeadingOne: 1.75rem;
+$subHeadingTwo: 0.9rem;
+
+/* regular text */
+$navText: 1rem;
+$bodyText: 1rem;
+
+/* main colors */
+$darkColor: #0b0d17;
+$secondaryColor: #d0d6f9;
+$primaryColor: #ffffff;
+
+/* main fonts */
+$mainFont: "Barlow Condensed", sans-serif;
+$secondaryFont: "Bellefair", serif;
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@mixin background($url) {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  position: fixed;
+  background: url($url);
+  background-repeat: no-repeat;
+  background-size: auto;
+  z-index: -1000;
+  background-attachment: fixed;
+}

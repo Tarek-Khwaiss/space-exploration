@@ -1,22 +1,21 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <HomeView></HomeView>
 </template>
 
+<script lang="ts">
+import { defineComponent } from "vue";
+import HomeView from "./views/HomeView.vue";
+
+export default defineComponent({
+  components: {
+    HomeView,
+  },
+});
+</script>
+
 <style lang="scss">
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+#app {
+  // height: 100%;
+  // width: 100%;
 }
 </style>
